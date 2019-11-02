@@ -17,26 +17,19 @@
  *
  * @package WordPress
  */
-
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define( 'DB_NAME', 'massage' );
-
 /** Имя пользователя MySQL */
 define( 'DB_USER', 'root' );
-
 /** Пароль к базе данных MySQL */
 define( 'DB_PASSWORD', '' );
-
 /** Имя сервера MySQL */
 define( 'DB_HOST', 'localhost' );
-
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8mb4' );
-
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define( 'DB_COLLATE', '' );
-
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *
@@ -54,9 +47,7 @@ define( 'AUTH_SALT',        'b~-TGsHC.whA(k|a8}J5aD=gqc~RfXF4{S3Rhp+V .;y3}K|!*u
 define( 'SECURE_AUTH_SALT', '] l{3DINJ@Xb@[}-TYpDrJqlaj;,i{|]&|<m!WuI%9[1U7kIr)Qqh[{?THa!4(?^' );
 define( 'LOGGED_IN_SALT',   '<>U^Ms^D?@TY6Lj5;$mb,>*&Zx9O(A ldmu*nA7,VmV@!pUr^uef+-c33O[Vohbn' );
 define( 'NONCE_SALT',       '}T16]`t@VX]F$BYe8c25,G9f/%[RKSv*Tp:%*A~@x&}8sr,]87<;UAihla]<SEpl' );
-
 /**#@-*/
-
 /**
  * Префикс таблиц в базе данных WordPress.
  *
@@ -64,7 +55,6 @@ define( 'NONCE_SALT',       '}T16]`t@VX]F$BYe8c25,G9f/%[RKSv*Tp:%*A~@x&}8sr,]87<
  * разные префиксы. Пожалуйста, указывайте только цифры, буквы и знак подчеркивания.
  */
 $table_prefix = 'wp_';
-
 /**
  * Для разработчиков: Режим отладки WordPress.
  *
@@ -77,13 +67,10 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
-
 /* Это всё, дальше не редактируем. Успехов! */
-
 /** Абсолютный путь к директории WordPress. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }
-
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once( ABSPATH . 'wp-settings.php' );
